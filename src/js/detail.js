@@ -110,6 +110,12 @@
                 $nowValue = Number($nowValue) + 1
                 $(".value input").val($nowValue)
             })
+            $("#val").on("input",function(){
+                $(this).val($(this).val().replace(/[^\d]/g,''))
+                if( $(this).val()==0){
+                    $(this).val(1)
+                }
+             });
         }
         addInCart() {
             $(".addIn").on("click", function () {

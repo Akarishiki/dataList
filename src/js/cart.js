@@ -33,7 +33,8 @@ $(document).ready(function () {
                     },
                     dataType: "json",
                     success: function (data) {
-                        if (data.length >= 1) {
+                        if (data.length>=1) {
+                            console.log(data);
                             $.each(data, function (index, value) {
                                 $($(`
                                 <tr class="sid${$(this).eq(0).eq(0).attr("sid")}">
@@ -60,7 +61,7 @@ $(document).ready(function () {
                                 <td style="padding-top:50px;">
                                     <div class="num-value border-box">
                                         <span class="less">-</span>
-                                        <span class="value" style="width: 30px;"><input type="text" value="${$this.$aNum[index]}"></span>
+                                        <span class="value" style="width: 30px;"><input type="text" value="${$this.$aNum[index]}" disabled></span>
                                         <span class="more">+</span>
                                     </div>
                                 </td>
@@ -73,13 +74,16 @@ $(document).ready(function () {
                             </tr>
                                 `)).prependTo($(".cart-goods"));
                             });
+                        }else{
+                            $this.goOn();
+                            $this.buy();
                         }
+                        $this.goOn();
+                        $this.buy();
                         $this.changePrice();
                         $this.removeItem();
                         $this.plus();
                         $this.less();
-                        $this.goOn();
-                        $this.buy();
                     }
                 });
             }

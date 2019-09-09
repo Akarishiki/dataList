@@ -9,6 +9,7 @@
   width: 100%;
   z-index: 99999 !important;
   height: 80px;
+  background: white;
 }
 
 a {

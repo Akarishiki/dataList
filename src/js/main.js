@@ -43,11 +43,8 @@
             let $autoTimer = null;
             $($left).on("click", function () {
                 if ($flag === true) {
-                    console.log(123);
                     $flag = false;
-                    $($oUl)
-                        .stop(true)
-                        .animate({ left: -($index - 1) * $distance }, 500);
+                    $($oUl).stop(true).animate({ left: -($index - 1) * $distance }, 500);
                     if ($index <= 1) {
                         let timer = null;
                         timer = setInterval(function () {
