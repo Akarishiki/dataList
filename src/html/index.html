@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TheNorthFace官方商城</title>
+    <link rel="stylesheet" href="../css/topnav.css" />
+    <link rel="stylesheet" href="../css/bottom.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="nav"></div>
+
+    <!-- 轮播图 -->
+    <div class="banner">
+        <ul>
+            <li><a href="#"><img class="last" src="" alt=""></li></a></li>
+            <li><a href="#"><img class="first" src="" alt=""></li></a></li>
+            <li><a href="#"><img class="last" src="" alt=""></li></a></li>
+            <li><a href="#"><img class="first" src="" alt=""></li></a></li>
+        </ul>
+        <div class="dots">
+            <ul>
+                <li class="active"></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="arrow-left">
+            <i>&lt;</i>
+        </div>
+        <div class="arrow-right">
+            <i>&gt;</i>
+        </div>
+    </div>
+    <!-- 三合一宣传图 -->
+    <div class="three-in-one">
+        <!-- 上图 -->
+        <div class="top-pic">
+            <img src="" alt="" width="1140" height="356" />
+        </div>
+        <!-- 下图 -->
+        <div class="down-pics">
+            <div class="down-left-pic">
+                <img src="" alt="" />
+            </div>
+            <div class="down-right-pic">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- 优选 -->
+    <div class="customerLikes">
+        <ul class="likeNav">
+            <li style="cursor:pointer">男士优选</li>
+            <li style="cursor:pointer">女士优选</li>
+        </ul>
+        <ul class="likeItems">
+            <li><img src="" alt="" /><div class="bg"><input type="button" value="点击查看"></div></li>
+            <li><img src="" alt="" /><div class="bg"><input type="button" value="点击查看"></div></li>
+            <li><img src="" alt="" /><div class="bg"><input type="button" value="点击查看"></div></li>
+            <li><img src="" alt="" /><div class="bg"><input type="button" value="点击查看"></div></li>
+        </ul>
+    </div>
+    <!-- 底部轮播 -->
+    <div class="sub-banner">
+        <ul>
+            <li><img src="" alt="" style="width:100%" /></li>
+            <li><img src="" alt="" style="display: none" /></li>
+        </ul>
+    </div>
+    <!-- 最佳销售单品列表 -->
+    <div class="recommend-goods" style="position: relative">
+        <h3>最佳销售单品</h3>
+        <div class="recommend-wrapper">
+            <ul>
+            </ul>
+        </div>
+        <span class="arL" style="cursor: pointer; font-size:30px ;display:block;position: absolute;top: 50%; left: -70px">&lt;</span>
+        <span class="arR" style="cursor: pointer; font-size:30px ;display:block;position: absolute;top: 50%; right: -70px">&gt;</span>
+    </div>
+    <!-- 固定楼梯 -->
+    <div class="ele">
+        <div><a href="javascript:;">精品优选</a></div>
+        <div><a href="javascript:;">热销推荐</a></div>
+        <div><a href="javascript:;" class="bt">回到顶部</a></div>
+    </div>
+    <div class="footer"></div>
+    <script src="../../jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/topnav.js"></script>
+    <script>
+        $(".nav").load("topnav.html");
+        $(".footer").load("bottom.html");
+    </script>
+</body>
+
+</html>

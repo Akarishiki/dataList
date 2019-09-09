@@ -1,0 +1,249 @@
+body {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+.border-box {
+  box-sizing: border-box;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.cart-header {
+  height: 60px;
+  border-bottom: 1px solid #dfdfdf;
+  position: relative;
+  font-family: "Helvetica", "Lantinghei SC", "microsoft yahei";
+  .logo {
+    width: 60px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding-left: 80px;
+    span {
+      height: 60px;
+      line-height: 60px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    div {
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      margin: 20px 10px;
+    }
+  }
+}
+.cart-container {
+  width: 1160px !important;
+  padding-bottom: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  .step {
+    margin: 20px 0;
+    width: 100%;
+    tr {
+      td {
+        text-align: center;
+        background: url("https://img1.thenorthface.com.cn/public/app/b2c/statics/images/cart-in.png")
+          no-repeat;
+        background-size: 100% 100%;
+        color: #fff !important;
+        width: 28%;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+      .step2,
+      .step3 {
+        background: url("https://img1.thenorthface.com.cn/public/app/b2c/statics/images/cart-out-1.png")
+          no-repeat;
+        background-size: 100% 100%;
+        color: #767676 !important;
+      }
+    }
+  }
+  .cart-body{
+    border: 1px solid #efefef;
+    overflow: hidden;
+  }
+  .cart-body table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    thead {
+      background-color: #f2f2f2;
+      color: #a5a5a5;
+      height: 37px;
+    }
+    th {
+      font-weight: 400;
+      color: #a5a5a5;
+      font-size: 14px;
+      text-align: center;
+      line-height: 1.42857143;
+      padding: 8px 1px;
+      input {
+        margin: 4px 0 0;
+        line-height: normal;
+        height: 13px;
+      }
+    }
+    tbody {
+        border-bottom: 1px solid #efefef;
+      a {
+        color: #666666;
+        text-decoration: none;
+      }
+      color: #666;
+      td {
+        padding-top: 15px;
+        padding-bottom: 8px;
+        line-height: 20px;
+        vertical-align: top;
+        text-align: center;
+        input {
+          margin-top: 40px;
+          margin: 4px 0 0;
+          line-height: normal;
+        }
+        p {
+          margin: 0 0 10px;
+          font-size: 14px;
+          font-weight: 100;
+        }
+        .num-value{
+            overflow: hidden;
+            width: 76px;
+            margin: 0 auto;
+        }
+        .num-value span {
+          overflow: hidden;
+          display: block;
+          border: 1px solid #a9a9a9;
+          text-align: center;
+          min-width: 20px;
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 14px;
+          cursor: pointer;
+          float: left;
+          color: #767676;
+          input {
+            color: #767676;
+            border: none;
+            min-width: 30px;
+            width: 30px;
+            height: 20px;
+            font-size: 14px;
+            text-align: center;
+            outline: none;
+            margin: 0;
+          }
+        }
+      }
+      .single-price{
+        color: #fe2000;
+    }
+    }
+  }
+  .goods .label em,  .total .label em{
+    padding-top: 10px;
+    color: #8c8c8c;
+    font-size: 14px;
+    float: left;
+    text-align: right;
+    width: 200px;
+    font-weight: 700;
+    font-style: normal;
+}
+.goods .price, .total .price{
+    float: left;
+    text-align: left;
+    width: 150px;
+    padding-left: 5px;
+    color: #fe2000;
+    margin-top: 5px;
+}
+.goods .price b, .total .price b{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+.btn{
+    float: right;
+    margin-bottom: 10px;
+    button{
+        height: 40px;
+        line-height: 40px;
+        width: 150px;
+        text-align: center;
+        border: 1px solid #dddddd;
+        margin-right: 10px;
+        float: right;
+        margin-top: 2px;
+    }
+}
+}
+.guess-like{
+    overflow: hidden;
+    h1{
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    a{
+        width: 19%;
+        float: left;
+        padding: 10px 0;
+        margin: 5px 5px 20px 5px;
+        text-decoration: none;
+        div{
+            width: 100%;
+            padding: 10px;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            margin: 10px 0 5px;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #000000;
+        }
+        .show-price{
+            text-align: center;
+            .now{
+                color: red;
+                font-weight: bold;
+            }
+            .old{
+                margin-left: 12px;
+        text-decoration: line-through;
+        color: #c7c7c7;
+            }
+        }
+    }
+    a:hover{
+        box-shadow: 0 0 12px 8px #f3f3f3;
+    }
+}
